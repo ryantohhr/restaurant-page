@@ -1,0 +1,103 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    font-family: 'Faculty Glyphic';
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+header {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+}
+
+div.title {
+    font-size: 5rem;
+}
+
+button {
+    flex-grow: 1;
+    border: none;
+    background-color: bisque;
+    font-size: 2rem;
+    height: 5rem;
+    width: 10rem;
+}
+
+img[alt="Main Restaurant Photo"] {
+    height: 20rem;
+    border-radius: 2rem;
+}
+
+div#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/pizza-wallpaper.avif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+}
+
+div.container {
+    display: flex;
+    height: 80%;
+    width: 100%;
+    padding: 50px 10%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+div.text {
+    width: 30%;
+}
+
+div.text > div.title {
+    font-size: 2rem;
+    color: white;
+}
+
+div.text > div.body {
+    font-size: 1rem;
+    color: white;
+}
