@@ -92,4 +92,5 @@ div.text > div.title {
 div.text > div.body {
     font-size: 1rem;
     color: white;
+    border: none;
 }

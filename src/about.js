@@ -18,7 +18,7 @@ export function generateAbout() {
 
     const textBody = document.createElement("div");
     textBody.classList.add("body");
-    textBody.textContent = "Phone: 1234 5678\nAddress: 123 Pizza Avenue";
+    textBody.textContent = "Phone: 1234 5678 Address: 123 Pizza Avenue";
     
     text.appendChild(textTitle);
     text.appendChild(textBody);
