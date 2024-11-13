@@ -1,29 +1,29 @@
-import pizzaHomeImage from "./assets/pizza-home.avif";
+import pizzaAboutImage from "./assets/pizza-about.avif"
 
-export function generateHome() {
+export function generateAbout() {
     const content = document.getElementById("content");
     
     const container = document.createElement("div");
     container.classList.add("container");
     
-    const pizzaHomeImg = document.createElement("img");
-    pizzaHomeImg.src = pizzaHomeImage;
+    const pizzaAboutImg = document.createElement("img");
+    pizzaAboutImg.src = pizzaAboutImage;
 
     const text = document.createElement("div");
     text.classList.add("text");
 
     const textTitle = document.createElement("div");
     textTitle.classList.add("title");
-    textTitle.textContent = "Pizza Restaurant";
+    textTitle.textContent = "Contact us";
 
     const textBody = document.createElement("div");
     textBody.classList.add("body");
-    textBody.textContent = "Welcome to the homepage of RYZZA! Your local Italian restaurant serving all your pizza needs!";
+    textBody.textContent = "Phone: 1234 5678\nAddress: 123 Pizza Avenue";
     
     text.appendChild(textTitle);
     text.appendChild(textBody);
 
-    container.appendChild(pizzaHomeImg);
+    container.appendChild(pizzaAboutImg);
     container.appendChild(text);
     
     content.appendChild(container);
